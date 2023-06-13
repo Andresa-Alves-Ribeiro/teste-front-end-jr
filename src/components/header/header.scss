@@ -1,0 +1,154 @@
+$primary-color: #f71963;
+$text-color: #9f9f9f;
+$bg-color: #f6f5f2;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.topHeader {
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1280px;
+
+    ul {
+        display: flex;
+        column-gap: 148px;
+        list-style: none;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        color: $text-color;
+    }
+
+    span {
+        font-weight: 600;
+        color: $primary-color;
+        padding: 0 2px;
+    }
+}
+
+.searchBar {
+    min-width: 1280px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+
+    nav {
+        display: flex;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+    }
+
+    input {
+        width: 607px;
+        height: 48px;
+        border-radius: 10px 0 0 10px;
+        background-color: $bg-color;
+        border: none;
+        color: $text-color;
+        margin: 12px 0;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 500;
+        color: $text-color;
+        padding: 24px 14px;
+    }
+
+    button {
+        height: 48px;
+        width: 50px;
+        border-radius: 0 10px 10px 0;
+        background-color: $bg-color;
+        border: none;
+        cursor: pointer;
+    }
+
+    :focus {
+        outline: 0;
+    }
+
+    .magnifyingGlass {
+        width: 24px;
+        height: 24px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        column-gap: 30px;
+    }
+
+    li {
+        cursor: pointer;
+    }
+}
+
+
+.categories {
+    min-width: 1280px;
+    box-shadow: 0px 8px 16px rgba(57, 48, 19, 0.12);
+
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        column-gap: 91px;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 3px 0;
+        font-size: 12px;
+        font-weight: 600;
+        color: $text-color;
+    }
+
+    li:hover {
+        color: $primary-color;
+    }
+
+    .ofertas {
+        color: $primary-color;
+    }
+
+    .ofertas:hover {
+        color: $text-color;
+    }
+
+    .crown {
+        padding: 0 13px;
+    }
+}
