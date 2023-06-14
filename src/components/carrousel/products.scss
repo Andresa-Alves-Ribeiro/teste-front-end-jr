@@ -1,0 +1,34 @@
+.ctnMax {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+
+    margin-top: 6vh;
+    margin-left: 1vw;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 50px;
+    padding: 0 5px;
+}
+
+.arrowBtnLeft {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.arrowBtn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 34px;
+}
+
+.arrowBtn:last-child {
+    margin-left: 10px;
+}
