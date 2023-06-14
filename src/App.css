@@ -1,0 +1,238 @@
+$font-stack: "Poppins";
+$font-modal: "Lato";
+
+$primary-color: #f71963;
+$secundary-color: #ffffff;
+$text-color: #9f9f9f;
+$text-secundary-color: #3f3f40;
+$bg-color: #f6f5f2;
+$border-color: 1px solid #bdbdbd;
+
+$container-max-width: 1443px;
+$container-mid-width: 1280px;
+
+$modal-text-color: #041e50;
+$modal-text-secundary-color: #222222;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+.ctnHome {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+@use "variables";
+
+@mixin container {
+  max-width: variables.$container-max-width;
+}
+
+@mixin containerMiddle {
+  width: variables.$container-mid-width;
+}
+
+@mixin ul {
+  display: flex;
+  list-style: none;
+  column-gap: 32px;
+}
+@mixin containerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: variables.$primary-color;
+  color: variables.$secundary-color;
+  text-align: center;
+}
+
+@mixin carousel {
+  display: flex;
+  justify-content: space-around;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 1280px;
+}
+
+@mixin bannerCard {
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%);
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+
+@mixin ctnBanners {
+  width: variables.$container-mid-width;
+
+  margin-top: 71px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin ctnBanners {
+  width: variables.$container-mid-width;
+
+  margin-top: 71px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+@mixin titleBanner {
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: variables.$secundary-color;
+}
+
+@mixin textBanner {
+  width: 181px;
+  margin-bottom: 32px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: variables.$secundary-color;
+}
+
+@mixin ctnNavBrands {
+  width: variables.$container-mid-width;
+
+  display: flex;
+
+  background-color: variables.$secundary-color;
+}
+
+@mixin ctnFooter {
+  width: 100vw;
+  margin-top: 170px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #2a2a2a;
+}
+
+@mixin ctnInfos {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 32px;
+
+  text-transform: uppercase;
+
+  color: variables.$secundary-color;
+}
+
+@mixin titleFooter {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+
+  color: variables.$secundary-color;
+}
+
+@mixin creditCards {
+  width: 212px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@mixin ctnRegisterNews {
+  margin-left: 30px;
+  width: 390px;
+  height: 260px;
+
+  background: #ffffff;
+  border-radius: 10px;
+
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin ctnBottom {
+  width: 100%;
+  height: 70px;
+
+  border-top: 1px solid variables.$secundary-color;
+  background-color: #2a2a2a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin ctnMid {
+  width: variables.$container-mid-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin ctnTextFooter {
+  width: 695px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: variables.$secundary-color;
+}
+
+@mixin ctnModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.54);
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin boxModalText {
+  width: 328px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.05em;
+  line-height: 100%;
+  font-weight: 400;
+}

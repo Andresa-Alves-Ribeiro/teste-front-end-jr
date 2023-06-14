@@ -11,6 +11,12 @@ import CrownSimple from "../../assets/CrownSimple.svg";
 
 import './header.scss'
 
+interface HeaderProps {
+    title: string;
+    logo: string;
+}
+
+
 export function Header() {
     return (
         <>
@@ -48,16 +54,16 @@ export function Header() {
                     <nav>
                         <ul>
                             <li>
-                                <img src={Box} alt="" />
+                                <img src={Box} alt="Box Logo" />
                             </li>
                             <li>
-                                <img src={Heart} alt="" />
+                                <img src={Heart} alt="Heart Logo" />
                             </li>
                             <li>
-                                <img src={UserCircle} alt="" />
+                                <img src={UserCircle} alt="User Logo" />
                             </li>
                             <li>
-                                <img src={ShoppingCart} alt="" />
+                                <img src={ShoppingCart} alt="Cart Logo" />
                             </li>
                         </ul>
                     </nav>
