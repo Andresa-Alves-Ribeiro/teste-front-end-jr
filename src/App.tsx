@@ -85,6 +85,7 @@ function App() {
         setSelectedProducts={setSelectedProducts}
         setOpenModal={setOpenModal}
       />
+      <Footer />
     </>
   );
 }

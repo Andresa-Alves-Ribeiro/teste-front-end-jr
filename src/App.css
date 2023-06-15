@@ -1,0 +1,23 @@
+$font-stack: "Poppins";
+$font-modal: "Lato";
+
+$primary-color: #f71963;
+$secundary-color: #ffffff;
+$text-color: #9f9f9f;
+$text-secundary-color: #3f3f40;
+$bg-color: #f6f5f2;
+$border-color: 1px solid #bdbdbd;
+
+$container-max-width: 1443px;
+$container-mid-width: 1280px;
+
+$modal-text-color: #041e50;
+$modal-text-secundary-color: #222222;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
