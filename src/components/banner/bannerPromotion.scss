@@ -9,6 +9,7 @@ $secundary-color: #ffffff;
     top: 160px;
 
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%), url(../../assets/Banner.svg);
+    background-size: cover;
     mix-blend-mode: normal;
     opacity: 0.8;
     border-radius: 0px;
@@ -64,5 +65,28 @@ $secundary-color: #ffffff;
 
     button:hover {
         background-color: #f80657;
+    }
+}
+
+
+@media (min-width: 1380px) {
+    .banner {
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+
+        h2,
+        p {
+            padding-left: 10vw;
+        }
+
+        button {
+            margin-left: 10vw;
+        }
+    }
+
+
+    .contents {
+        padding: 92vw;
     }
 }

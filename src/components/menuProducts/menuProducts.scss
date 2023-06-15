@@ -35,3 +35,13 @@ $border-color: 1px solid #bdbdbd;
     font-weight: 700;
     color: $primary-color;
 }
+
+
+@media (min-width: 1380px) {
+    .menuProducts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2vw;
+    }
+}

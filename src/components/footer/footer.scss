@@ -206,3 +206,13 @@ $secundary-color: #ffffff;
         cursor: pointer;
     }
 }
+
+
+@media (min-width: 1380px) {
+    .ctnRegisterNews {
+
+        input {
+            width: 198px;
+        }
+    }
+}

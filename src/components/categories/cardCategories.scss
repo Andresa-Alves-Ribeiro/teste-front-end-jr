@@ -41,8 +41,8 @@ $text-color: #4E4E4E;
             color: #f71963;
         }
     }
-}
 
+}
 
 .cardImg {
     cursor: pointer;
@@ -66,4 +66,11 @@ $text-color: #4E4E4E;
 .cardImg:hover {
     color: $primary-color;
     background-color: $secundary-color;
+}
+
+
+@media (min-width: 1380px) {
+    .cardsCategories {
+        margin-top: 50vh;
+    }
 }
