@@ -1,12 +1,8 @@
-import React from "react";
 import "./brands.scss";
 import Vtex from "../../assets/VtexLogo.svg";
 
-interface BrandsProps {
-    title: string;
-}
 
-export default function Brands({ title }: BrandsProps) {
+export default function Brands() {
     return (
         <>
             <div className="ctnCircle">

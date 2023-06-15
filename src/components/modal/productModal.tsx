@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "./modal";
 import "./productModal.scss";
 
-interface Product {
+export interface Product {
   photo: string;
   productName: string;
   price: number;

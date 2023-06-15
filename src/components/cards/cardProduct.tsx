@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Modal from "./modal";
+import { useState } from "react";
 import { ProductModal, Product } from "../modal/productModal";
 
 import "./cardProducts.scss";
@@ -21,10 +20,6 @@ export function CardProduct({
 
   const handleOpenModal = () => {
     setOpenModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setOpenModal(false);
   };
 
   const formattedPrice = price.toLocaleString("pt-BR", {
@@ -63,7 +58,6 @@ export function CardProduct({
           isOpen={openModal}
           setOpenModal={setOpenModal}
           products={product}
-          setSelectedProducts={null}
         />
       )}
     </div>

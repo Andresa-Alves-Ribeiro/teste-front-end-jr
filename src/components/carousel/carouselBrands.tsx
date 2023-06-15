@@ -1,18 +1,27 @@
 import "./carouselBrands.scss";
-import { useEffect, useState, useRef } from "react";
+import { useRef } from "react";
 import Brands from "../brands/brands";
 import arrowBlue from "../../assets/arrowBlue.svg";
 
-export function CarouselBrands({ brandsLogo }) {
-    const carousel = useRef(null);
+interface CarouselBrandsProps {
+    brandsLogo: Array<{ title: string; photo: string }>;
+}
 
-    const handleLeftClick = (e) => {
-        carousel.current.scrollLeft -= carousel.current.offsetWidth;
+export function CarouselBrands({ brandsLogo }: CarouselBrandsProps) {
+    const carousel = useRef<HTMLDivElement | null>(null);
+
+
+    const handleLeftClick = () => {
+        if (carousel.current) {
+            carousel.current.scrollLeft -= carousel.current.offsetWidth;
+        }
     };
 
-    const handleRigthClick = (e) => {
+    const handleRigthClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
-        carousel.current.scrollLeft += carousel.current.offsetWidth;
+        if (carousel.current) {
+            carousel.current.scrollLeft += carousel.current.offsetWidth;
+        }
     };
 
     if (!brandsLogo || !brandsLogo.length) return null;
@@ -26,9 +35,9 @@ export function CarouselBrands({ brandsLogo }) {
                 </button>
                 <div className="containerCarousel">
                     <div className="carousel" ref={carousel}>
-                        {brandsLogo.map((item, index) => {
+                        {brandsLogo.map((item: { title: string; photo: string }, index: number) => {
                             const { title, photo } = item;
-                            return <Brands title={title} photo={photo} />;
+                            return <Brands key={index} title={title} photo={photo} />;
                         })}
                     </div>
                 </div>

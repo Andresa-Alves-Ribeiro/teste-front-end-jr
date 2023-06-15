@@ -1,13 +1,4 @@
 import "./bannerPromotion.scss";
-import A from '../../assets/Banner.svg'
-
-
-interface BannerPromotionProps {
-  title: string;
-  subtitle: string;
-  buttonText: string;
-  image: string;
-}
 
 
 export function BannerPromotion() {
