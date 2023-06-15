@@ -1,9 +1,11 @@
 $primary-color: #f71963;
+$text-color: #3f3f40;
 
 .products {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .title {
@@ -12,7 +14,6 @@ $primary-color: #f71963;
     align-items: center;
 
     h2 {
-        font-family: 'Poppins';
         font-style: normal;
         color: $primary-color;
         padding: 0 34px;
@@ -33,5 +34,11 @@ $primary-color: #f71963;
     font-size: 15px;
     line-height: 22px;
     text-align: center;
-    color: #3f3f40;
+    color: $text-color;
+    margin: -3vh 0;
+}
+
+.showAllProducts:hover {
+    color: $primary-color;
+    text-decoration: underline;
 }

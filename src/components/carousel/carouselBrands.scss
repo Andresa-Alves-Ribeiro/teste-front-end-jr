@@ -1,0 +1,42 @@
+$primary-color: #f71963;
+$secundary-color: #ffffff;
+
+
+.titleBrands {
+    width: 325px;
+    height: 45px;
+    margin: 20vh auto 0;
+    text-align: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+
+    color: $primary-color;
+}
+
+
+.ctnMax {
+    .btnArrow {
+        cursor: pointer;
+
+        border-radius: 100px;
+        width: 56px;
+        height: 56px;
+        margin-top: -8vh;
+
+        background: $secundary-color;
+        border: none;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
+
+        img {
+            width: 14px;
+        }
+    }
+}
+
+.btnArrow:first-child img {
+    transform: rotate(180deg);
+}

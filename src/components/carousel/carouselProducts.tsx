@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { CardProduct, SelectedProduct } from "../cards/cardProduct";
 import arrowLeft from "../../assets/arrow-left.svg";
 import arrowRight from "../../assets/arrow-rigth.svg";
-import "./products.scss";
+import "./carouselProducts.scss";
 
 interface CarouselProductsProps {
     products: SelectedProduct[];
