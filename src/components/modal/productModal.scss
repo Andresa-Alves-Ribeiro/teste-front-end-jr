@@ -1,0 +1,55 @@
+$modal-text-color: #041e50;
+$modal-text-secundary-color: #222222;
+
+.modalCard {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+.boxModalImg {
+    width: 247px;
+    height: 192px;
+}
+
+.boxModalText {
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.05em;
+    line-height: 100%;
+    
+
+    h3 {
+        font-size: 20px;
+        color: $modal-text-color;
+        font-weight: 400;
+    }
+
+    span {
+        padding: 10px 0;
+        font-size: 10px;
+        line-height: 150.5%;
+
+        color: $modal-text-secundary-color;
+    }
+
+    .priceModalBox {
+        font-weight: 900;
+        font-size: 20px;
+
+        color: $modal-text-color;
+    }
+
+    .showMoreText {
+        cursor: pointer;
+
+        font-size: 12px;
+        line-height: 100%;
+
+        color: $modal-text-color;
+    }
+
+    .showMoreText:hover {
+        text-decoration: underline;
+    }
+}

@@ -21,12 +21,11 @@ $secundary-color: #ffffff;
     }
 
     .closeBtn {
-        width: 100%;
         display: flex;
         justify-content: end;
-        padding: 16px 31px;
+        padding: 12px 10px;
 
-        span {
+        img {
             cursor: pointer;
         }
     }
