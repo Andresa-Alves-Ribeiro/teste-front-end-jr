@@ -11,11 +11,6 @@ import CrownSimple from "../../assets/CrownSimple.svg";
 
 import './header.scss'
 
-interface HeaderProps {
-    title: string;
-    logo: string;
-}
-
 
 export function Header() {
     return (

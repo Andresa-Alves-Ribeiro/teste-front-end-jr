@@ -17,14 +17,6 @@ import sodexo from "../../assets/sodexo.svg";
 import econverse from "../../assets/econverse.svg";
 import vtex from "../../assets/vtex.svg";
 
-interface BrandLogo {
-    photo: string;
-    title: string;
-}
-
-interface FooterProps {
-    brandsLogo: BrandLogo[];
-}
 
 export interface FooterInfo {
     title: string;
@@ -40,9 +32,10 @@ export interface RegisterNews {
     title: string;
     description: string;
     placeholder: string;
+    span: string;
 }
 
-export function Footer({ brandsLogo }: FooterProps): JSX.Element {
+export function Footer(): JSX.Element {
     const footerInfos: FooterInfo[] = [
         {
             title: "SOBRE NÓS",

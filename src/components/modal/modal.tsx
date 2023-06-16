@@ -6,7 +6,9 @@ import "./modal.scss";
 interface ModalProps {
   children: ReactNode;
   close: () => void;
+  isOpen?: boolean;
 }
+
 
 const Modal: React.FC<ModalProps> = ({ children, close }) => {
   return (

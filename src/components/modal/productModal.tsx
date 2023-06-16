@@ -1,7 +1,6 @@
 import React from "react";
 import Modal from "./modal";
-import "./productModal.scss";
-
+import './productModal.scss'
 export interface Product {
   photo: string;
   productName: string;
@@ -11,10 +10,11 @@ export interface Product {
 
 interface ProductModalProps {
   isOpen: boolean;
-  setOpenModal: (open: boolean) => void;
-  products: Product | null;
+  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
+  products: Product;
   setSelectedProducts: (products: Product | null) => void;
 }
+
 
 export const ProductModal: React.FC<ProductModalProps> = ({
   isOpen,
@@ -22,6 +22,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({
   products,
   setSelectedProducts,
 }) => {
+
   const handleCloseModal = () => {
     setOpenModal(false);
     setSelectedProducts(null);

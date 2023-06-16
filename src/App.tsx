@@ -12,8 +12,11 @@ import { CardsProducts } from './components/cardsProducts/cardsProducts';
 import { CarouselBrands } from './components/carousel/carouselBrands';
 import { brandsLogo } from './utils/brandsLogo';
 import { Footer } from './components/footer/footer';
+import { ProductModal } from './components/modal/productModal';
 
 function App() {
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [openModal, setOpenModal] = useState(false);
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
@@ -30,29 +33,52 @@ function App() {
     }
   };
 
+
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
   return (
     <>
       <Header />
       <BannerPromotion />
       <CardsCategories />
-      <ProductsRelated />
+      <ProductsRelated text="" />
       <MenuProducts />
       <CarouselProducts
         products={products}
+        setSelectedProducts={setSelectedProduct}
+        setOpenModal={setOpenModal}
       />
+
       <CardsPartners />
       <ProductsRelated text="Ver todos" />
       <CarouselProducts
         products={products}
+        setSelectedProducts={setSelectedProduct}
+        setOpenModal={setOpenModal}
       />
+
       <CardsProducts />
       <CarouselBrands brandsLogo={brandsLogo} />
       <ProductsRelated text="Ver todos" />
       <CarouselProducts
         products={products}
-        style={{ marginBottom: '18vh' }}
+        setSelectedProducts={setSelectedProduct}
+        setOpenModal={setOpenModal}
       />
+
       <Footer />
+
+      {openModal && selectedProduct && (
+        <ProductModal
+          isOpen={openModal}
+          setOpenModal={setOpenModal}
+          products={selectedProduct}
+          setSelectedProducts={setSelectedProduct}
+        />
+      )}
     </>
   );
 }

@@ -17,7 +17,7 @@ export function CarouselBrands({ brandsLogo }: CarouselBrandsProps) {
         }
     };
 
-    const handleRigthClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handleRightClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         if (carousel.current) {
             carousel.current.scrollLeft += carousel.current.offsetWidth;
@@ -39,9 +39,10 @@ export function CarouselBrands({ brandsLogo }: CarouselBrandsProps) {
                             const { title, photo } = item;
                             return <Brands key={index} title={title} photo={photo} />;
                         })}
+
                     </div>
                 </div>
-                <button className="btnArrow" onClick={handleRigthClick}>
+                <button className="btnArrow" onClick={handleRightClick}>
                     <img src={arrowBlue} alt="arrow blue" />
                 </button>
             </div>
