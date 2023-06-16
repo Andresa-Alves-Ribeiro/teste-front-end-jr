@@ -93,8 +93,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## ⚙️ Funcionalidades
 
-Você pode acessar o link abaixo e visualizar o deploy:
+Você pode acessar o link abaixo e visualizar o DEPLOY:
 
+https://teste-front-end-jr-ecru.vercel.app/
 
 **OU**
 

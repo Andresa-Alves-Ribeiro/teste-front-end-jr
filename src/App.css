@@ -11,10 +11,13 @@ $container-mid-width: 1280px;
 $modal-text-color: #041e50;
 $modal-text-secundary-color: #222222;
 
-
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
