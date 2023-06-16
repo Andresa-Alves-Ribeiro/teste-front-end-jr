@@ -33,12 +33,6 @@ function App() {
     }
   };
 
-
-
-  const handleCloseModal = () => {
-    setOpenModal(false);
-  };
-
   return (
     <>
       <Header />
